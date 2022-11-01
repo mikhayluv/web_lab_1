@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 300px;
+    height: 280px;
+    border: 3px solid #4238ca;
+}
+body{
+    width: 1000px;
+    max-width: 937px;
+    font-family: 'Courier New', Courier, monospace;
+    background: #FFE4E1;
+    font-size: 16px;
+    margin-left: 25px;
+}
+
+header{
+    background: #FFE4E1;
+    font-family: fantasy;
+    font-size: 16px;
+    color: #000000;
+    width: 937px;
+    padding: 19px 47px;
+}
+
+main{
+    width: 1500px;
+    background: #FFE4E1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+
+aside{
+    padding: 19px 47px;
+    max-width: 937px;
+    overflow:hidden;
+}
+
+article{
+    padding: 19px 47px;
+    max-width: 937px;
+    overflow:hidden;
+}
+
+header > h1{
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+h1 + h2{
+    font-size: 1.5em;
+    line-height: 1.2em;
+}
+
+#error {
+    font-size:1.2em;
+    color:red;
+}
+
+header p{
+    margin-top: 0.25em;
+}
+
+#result_table{
+    margin-left: 100px;
+    border-collapse: collapse;
+    border: 1px solid #4238ca;
+}
+
+#result_table tbody tr td{
+    max-width:300px;
+    overflow-x: auto;
+}
+
+#result_table td, #result_table th{
+    border: 1px solid #4238ca;
+    padding: 0.5em 0.75em;
+}
+
+#result_table caption{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: 700;
+}
+
+tr.hit{
+    background: rgba(101, 145, 12, 0.5);
+}
+
+tr.lose{
+    background: rgba(232, 54, 42, 0.5);
+}
+
+
+.svg_wrapper svg{
+    width: min(30em, 90vw);
+}
+
+.svg_wrapper{
+    position: relative;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.svg_wrapper:before{
+    content: '';
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    top: -5%;
+    left: -5%;
+    border: 1px solid black;
+}
+
+section:nth-child(2) > form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+
+fieldset {
+    padding: 20px;
+    border:3px solid #4238ca;
+    background:#f6f8ff;
+}
+
+#check_form > fieldset > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#check_form label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#check_form label:first-child{
+    margin-left: 0;
+}
+
+input[type="checkbox"]{
+    margin-right: 5px;
+}
+
+.text_wrapper{
+    position: relative;
+
+}
+
+input[type="text"]{
+    width: 100%;
+    padding-left: 5px;
+}
+
+input[type="submit"]{
+    height: 2em;
+}
+
+input[type="button"]{
+    height: 2em;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5vh 0;
+}
+
+#button_reset{
+    border-radius: 4px;
+    background: #4238ca;
+    border: none;
+    color: #f6f8ff;
+}
+#button_submit{
+    border-radius: 4px;
+    background: #4238ca;
+    border: none;
+    color: #f6f8ff;
+}

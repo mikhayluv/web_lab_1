@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web_Lab 1</title>
+</head>
+<body>
+<header>
+  <h1>Лабораторная работа №1</h1>
+  <h2>Технологии разработки интерактивных цифровых ресурсов</h2>
+  <p>Выполнил: Михайлов Давид Р33212</p>
+  <p>Проверил: Яркеев Александр Сергеевич</p>
+  <p>Вариант: 21111</p>
+</header>
+<main>
+  <article>
+    <img src="graph.png" class="graph" id="graph">
+    <section>
+      <form action="check.php" method="post" id="check_form">
+        <div id="error"></div>
+        <fieldset>
+          <legend>Координата X:</legend>
+          <div class="checkbox_wrapper">
+            <label><input type="checkbox" name="x" value="-4">-4</label>
+            <label><input type="checkbox" name="x" value="-3">-3</label>
+            <label><input type="checkbox" name="x" value="-2">-2</label>
+            <label><input type="checkbox" name="x" value="-1">-1</label>
+            <label><input type="checkbox" name="x" value="0">0</label>
+            <label><input type="checkbox" name="x" value="1">1</label>
+            <label><input type="checkbox" name="x" value="2">2</label>
+            <label><input type="checkbox" name="x" value="3">3</label>
+            <label><input type="checkbox" name="x" value="4">4</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Координата Y:</legend>
+          <div class="text_wrapper">
+            <input type="text" name="y" placeholder="-3 .. 3">
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Радиус R:</legend>
+          <div class="select_wrapper">
+            <select name="r">
+              <option value="1">1</option>
+              <option value="1.5">1.5</option>
+              <option value="2">2</option>
+              <option value="2.5">2.5</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+        </fieldset>
+        <input id="button_submit" name="submit" type="submit" value="Проверить">
+        <input id="button_reset" name="reset" type="button" value="Очистить историю">
+      </form>
+    </section>
+  </article>
+  <aside>
+    <table id="result_table">
+      <caption>Результаты проверки</caption>
+      <tbody>
+      <tr>
+        <th>№</th>
+        <th>X</th>
+        <th>Y</th>
+        <th>R</th>
+        <th>Попадание</th>
+        <th>Текущее время</th>
+        <th>Время выполнения</th>
+      </tr>
+      </tbody>
+    </table>
+  </aside>
+</main>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
